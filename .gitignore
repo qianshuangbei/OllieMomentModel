@@ -1,0 +1,13 @@
+outputs/**
+data/**
+image/**
+pose_result/**
+pose_result/**
+predict/**
+video/**
+video_long/**
+yolo*.pt
+*.out
+*.log
+Tmoment/debug/**
+Tmoment/output/**

@@ -1,0 +1,12 @@
+
+prompt:
+Design a model to do classification, label file is data/label.txt label file format: pose_file_path label_id. There are 3 labels: 0,1,2 pose file format: keypoint_id\tx\ty\tconf. There are 17 keypoint and 3 paramter, 17*3=51, and for each file, there are 4 group number. if there is less than 4 groups. padding with 0. each pose file can generate feature as [51,4]
+
+let Batch_size = 16. 
+Use SGD or Adam as loss function, 
+Use warm up and Learning rate decay. 
+Save the model for every 10 epoch, run 100 epoch. 
+print the loss and acc. 90% data as training, 10% data as dev. 
+Write the training code and eval code.
+
+

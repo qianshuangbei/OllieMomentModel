@@ -1,0 +1,22 @@
+loss:
+  focal:
+    alpha:
+    - 0.8
+    - 1.2
+    - 0.8
+    - 1.0
+    - 0.8
+    gamma: 2.0
+    use: true
+  loss_weights:
+    focal: 0.5
+    smoothing: 0.5
+  smoothing:
+    smoothing: 0.1
+    use: true
+  type: mixed
+training:
+  batch_size: 64
+  learning_rate: 0.001
+  num_classes: 5
+  num_epochs: 500
